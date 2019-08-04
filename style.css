@@ -110,8 +110,6 @@ body {
     align-items: center;
     justify-items: center;
     text-align: center;
-    border-color: black;
-    /* border-width: 20px; */
     padding: 0 30px;
 }
 
@@ -128,6 +126,46 @@ body {
     width: 200px;
     height: 200px;
     border-radius: 90%;
+}
+
+
+.skills {
+    background-color: var(--yellow);
+    background: linear-gradient(360deg, #FFFFFF 0%, rgba(255, 255, 255, 0.880208) 11.98%, rgba(255, 255, 255, 0) 100%), rgba(252, 227, 138, 0.5);
+    height: 430px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+.skillsContent{
+    background-color: white;
+    height: 320px;
+    width: 80%;
+
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    align-items: center;
+    justify-items: center;
+    text-align: center;
+    /* padding: 0 30px; */
+
+    font-size: 24px;
+}
+.skillsBox{
+    /* background-color: red; */
+    display: flex;
+    flex-direction: column;
+    align-content: top;
+}
+.skillName{
+    color: var(--pink);
+}
+
+.iconSkills{
+    width: 150px;
+    height: 150px;
+    /* background-color: gray; */
 }
 
 button {
