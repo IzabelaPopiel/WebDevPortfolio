@@ -1,3 +1,70 @@
-.headerItem{
-    display: inline;
+:root {
+    --yellow: #FCE38A;
+    --pink: #F38181;
+    --green: #8AAEAC;
+    --ceramic: #f8f5f2;
+}
+
+body {
+    background-color: var(--ceramic);
+    font-family: 'Bai Jamjuree', sans-serif;
+}
+
+.headerItem {
+    display: flex;
+    flex-direction: row;
+    padding: 0 20px;
+    font-size: 20px;
+}
+
+.navBar {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    width: 100%;
+    height: 95px;
+}
+
+.welcome {
+    background-image: url("images/background-botanical.jpg");
+    background-repeat: no-repeat;
+    height: 585px;
+    display: flex;
+    justify-content: flex-end;
+    background-position: center;
+    background-size: 100% auto;
+}
+
+.welcome_content {
+    color: var(--ceramic);
+    width: 50%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+}
+
+#hello_txt {
+    color: var(--yellow);;
+    font-size: 100px;
+}
+
+#icon {
+    width: 30px;
+    padding: 10px;
+}
+
+#text {
+    width: 80%;
+    font-size: 36px;
+}
+
+.sectionName {
+    display: flex;
+    justify-content: center;
+}
+
+footer {
+    text-align: center;
 }
