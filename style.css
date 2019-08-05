@@ -7,7 +7,6 @@
 
 * {
     font-family: 'Bai Jamjuree', sans-serif;
-
 }
 
 body {
@@ -206,7 +205,6 @@ body {
     float: left;
     text-align: left;
     margin-left: 30px;
-    margin-top: 30px;
     z-index: 1;
     width: 80%;
 }
@@ -247,11 +245,96 @@ body {
     z-index: 1;
     width: 50%;
     margin-right: 30px;
-    margin-top: 30px;
 }
 
 .designTitle {
     font-size: 40px;
+}
+
+.contact {
+    background: linear-gradient(180deg, #FFFFFF 0%, rgba(255, 255, 255, 0) 100%), rgba(252, 227, 138, 0.5);
+    text-align: center;
+    margin-top: 100px;
+    /* border-bottom: 100px; */
+
+}
+
+
+.contactContent {
+    height: 600px;
+    width: 90%;
+    display: inline-block;
+    margin-bottom: 100px;
+}
+
+.rectangleInfo {
+    background-color: var(--green);
+    width: 40%;
+    height: 100%;
+    float: left;
+    color: white;
+    font-size: 18px;
+    text-align: left;
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.contactInfo {
+    width: 90%;
+    margin: 0 auto;
+}
+
+.envelopeIcon {
+    filter: invert(100%);
+}
+
+.adress {
+    margin-top: 30%;
+}
+
+.rectangleForm {
+    background-color: white;
+    width: 60%;
+    height: 100%;
+    overflow: hidden;
+    justify-content: center;
+}
+
+.contactForm {
+    width: 90%;
+    height: 100%;
+    margin: 0 auto;
+}
+
+.contactForm p {
+    font-size: 36px;
+    text-align: left;
+}
+
+.contactForm button {
+    float: right;
+}
+
+input {
+    width: 100%;
+    margin-bottom: 20px;
+    height: 50px;
+    border-radius: 15px;
+    box-shadow: inset 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border: none;
+    background: #FAFAFF;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    font-size: 18px;
+}
+
+#messageInput {
+    height: 200px;
+    text-align: top;
+    vertical-align: top;
 }
 
 button {
@@ -261,7 +344,6 @@ button {
     border: none;
     text-align: center;
     font-size: 18px;
-
 }
 
 .redirectingButton {
@@ -269,7 +351,7 @@ button {
     height: 50px;
 }
 
-.viewButton {
+.smallButton {
     width: 100px;
     height: 50px;
 }
