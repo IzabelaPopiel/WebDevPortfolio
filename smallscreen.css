@@ -52,7 +52,6 @@ body {
     flex-direction: column;
     text-align: center;
     align-items: center;
-    /* background-color: navy; */
 }
 
 #hello_txt {
@@ -80,12 +79,9 @@ body {
 }
 
 .contactOrCheckCV {
-    /* justify-content: center; */
     display: flex;
     flex-direction: column;
-    /* justify-items: center; */
     align-items: center;
-    /* text-align: center; */
     font-size: 18px;
     height: 180px;
 }
@@ -163,8 +159,6 @@ body {
     align-items: center;
     justify-items: center;
     text-align: center;
-    /* padding: 0 30px; */
-
     font-size: 24px;
 }
 
@@ -181,7 +175,6 @@ body {
 .iconSkills {
     width: 150px;
     height: 150px;
-    /* background-color: gray; */
 }
 
 .portfolio {
@@ -221,7 +214,6 @@ body {
 .pic1:hover .pic1Text {
     visibility: visible;
     opacity: 1;
-    /* transition: 0.5s; */
 }
 
 .pic1Text {
@@ -287,7 +279,6 @@ body {
 .pic5:hover .pic5Text {
     visibility: visible;
     opacity: 1;
-    /* transition: 0.5s; */
 }
 
 .pic5Text {
@@ -309,10 +300,7 @@ body {
     background: linear-gradient(180deg, #FFFFFF 0%, rgba(255, 255, 255, 0) 100%), rgba(252, 227, 138, 0.5);
     text-align: center;
     margin-top: 100px;
-    /* border-bottom: 100px; */
-
 }
-
 
 .contactContent {
     height: 1000px;
@@ -400,10 +388,8 @@ button {
 }
 
 button:hover {
-    /* background-color: var(--green); */
     transition: 0.5s ease-in-out;
     transform: scale(1.1);
-
 }
 
 .redirectingButton {
@@ -429,11 +415,9 @@ footer {
     0% {
         transform: translate3d(0, 0, 0) scale3d(1, 1, 1);
     }
-
     50% {
         transform: translate3d(0, 10%, 0) scale3d(.9, 1.1, 1);
     }
-
     100% {
         transform: translate3d(0, 20%, 0) scale3d(1.1, .9, 1);
     }
