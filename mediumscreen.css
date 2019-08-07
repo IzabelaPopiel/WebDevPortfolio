@@ -1,0 +1,439 @@
+:root {
+    --yellow: #FCE38A;
+    --pink: #F38181;
+    --green: #8AAEAC;
+    --ceramic: #f8f5f2;
+}
+
+* {
+    font-family: 'Bai Jamjuree', sans-serif;
+}
+
+body {
+    background-color: white;
+}
+
+.headerItem {
+    display: flex;
+    flex-direction: row;
+    padding: 0 20px;
+    font-size: 20px;
+    text-decoration: none;
+    color: black;
+}
+
+.headerItem:hover {
+    animation: pulse 1s linear infinite;
+}
+
+.navBar {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    width: 100%;
+    height: 95px;
+}
+
+.welcome {
+    background-image: url("images/background-botanical.jpg");
+    background-repeat: no-repeat;
+    height: 480px;
+    display: flex;
+    justify-content: flex-end;
+    background-position: center;
+    background-size: 100% auto;
+    /* background-color: navy; */
+}
+
+.welcome_content {
+    color: var(--ceramic);
+    width: 50%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    /* background-color: green; */
+}
+
+#hello_txt {
+    color: var(--yellow);
+    font-size: 80px;
+}
+
+#icon {
+    width: 30px;
+    padding: 10px;
+}
+
+#icon:hover {
+    transform: rotate(360deg);
+    transition-duration: 1s;
+
+}
+
+#text {
+    width: 80%;
+    font-size: 28px;
+}
+
+.sectionName {
+    font-size: 32px;
+}
+
+.contactOrCheckCV {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 28px;
+    height: 220px;
+}
+
+.redirectingButtons {
+    display: flex;
+    justify-content: space-between;
+    width: 600px;
+    padding: 0px 0;
+}
+
+.aboutMe {
+    background-color: var(--yellow);
+    background: linear-gradient(180deg, #FFFFFF 0%, rgba(255, 255, 255, 0.880208) 11.98%, rgba(255, 255, 255, 0) 100%), rgba(252, 227, 138, 0.5);
+    height: 450px;
+    align-self: center;
+    justify-content: flex-end;
+    text-align: center;
+}
+
+.aboutMeContent {
+    background-color: white;
+    width: 90%;
+    height: 350px;
+
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-column-gap: 0px;
+
+    grid-row-gap: 0px;
+    padding: 30px;
+    align-items: center;
+    justify-items: center;
+    margin: 0 auto;
+
+}
+
+.boxCV {
+    width: 90%;
+}
+
+.cvPersonalData {
+    text-align: right;
+}
+
+.cvText {
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start: 2;
+    grid-row-end: 3;
+    text-align: justify;
+
+}
+
+.myPhoto {
+    width: 200px;
+    height: 200px;
+    border-radius: 90%;
+}
+
+
+.skills {
+    background-color: var(--yellow);
+    background: linear-gradient(360deg, #FFFFFF 0%, rgba(255, 255, 255, 0.880208) 11.98%, rgba(255, 255, 255, 0) 100%), rgba(252, 227, 138, 0.5);
+    height: 430px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.skillsContent {
+    background-color: white;
+    height: 320px;
+    width: 90%;
+
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    align-items: center;
+    justify-items: center;
+    text-align: center;
+    font-size: 24px;
+}
+
+.skillsBox {
+    display: flex;
+    flex-direction: column;
+    align-content: top;
+}
+
+.skillName {
+    color: var(--pink);
+}
+
+.iconSkills {
+    width: 150px;
+    height: 150px;
+}
+
+.portfolio {
+    width: 100%;
+    height: 750px;
+    text-align: center;
+}
+
+.picContainer {
+    display: grid;
+    grid-template-columns: repeat(8, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+}
+
+.pic {
+    width: 100%;
+    height: 350px;
+    object-fit: cover;
+}
+
+.picDiv {
+    position: relative;
+}
+
+.pic1 {
+    grid-column-start: 1;
+    grid-column-end: 4;
+    grid-row-start: 1;
+    grid-row-end: 2;
+}
+
+.pic1:hover {
+    opacity: 0.5;
+    transition: 0.5s;
+}
+
+.pic1Text {
+    position: absolute;
+    float: left;
+    text-align: left;
+    margin-left: 30px;
+    z-index: 1;
+    width: 80%;
+}
+
+.pic2 {
+    grid-column-start: 4;
+    grid-column-end: 6;
+    grid-row-start: 1;
+    grid-row-end: 2;
+}
+
+.pic2:hover {
+    transform: scale(1.3);
+    transition: 1s;
+}
+
+.pic3 {
+    grid-column-start: 6;
+    grid-column-end: 9;
+    grid-row-start: 1;
+    grid-row-end: 2;
+}
+
+.pic3:hover {
+    transform: rotate(30deg);
+    transition: 1s;
+}
+
+.pic4 {
+    grid-area: pic4;
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start: 2;
+    grid-row-end: 3;
+}
+
+.pic4:hover {
+    transform: scale(0.8);
+    transition: 1s;
+}
+
+.pic5 {
+    grid-column-start: 3;
+    grid-column-end: 9;
+    grid-row-start: 2;
+    grid-row-end: 3;
+}
+
+.pic5:hover {
+    opacity: 0.5;
+    transition: 0.5s;
+}
+
+.pic5Text {
+    position: absolute;
+    right: 0;
+    text-align: right;
+    z-index: 1;
+    width: 50%;
+    margin-right: 30px;
+}
+
+.designTitle {
+    font-size: 40px;
+}
+
+.contact {
+    background: linear-gradient(180deg, #FFFFFF 0%, rgba(255, 255, 255, 0) 100%), rgba(252, 227, 138, 0.5);
+    text-align: center;
+    margin-top: 100px;
+}
+
+
+.contactContent {
+    height: 600px;
+    width: 90%;
+    display: inline-block;
+    margin-bottom: 100px;
+    overflow: hidden;
+}
+
+.rectangleInfo {
+    background-color: var(--green);
+    width: 40%;
+    height: 100%;
+    float: left;
+    color: white;
+    font-size: 16px;
+    text-align: left;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.contactInfo {
+    width: 90%;
+    margin: 0 auto;
+}
+
+.envelopeIcon {
+    filter: invert(100%);
+}
+
+.adress {
+    margin-top: 30%;
+}
+
+.rectangleForm {
+    background-color: white;
+    width: 60%;
+    height: 100%;
+    overflow: hidden;
+    justify-content: center;
+}
+
+.contactForm {
+    width: 90%;
+    height: 100%;
+    margin: 0 auto;
+}
+
+.contactForm p {
+    font-size: 36px;
+    text-align: left;
+}
+
+.contactForm button {
+    float: right;
+}
+
+input {
+    width: 100%;
+    margin-bottom: 20px;
+    height: 50px;
+    border-radius: 15px;
+    box-shadow: inset 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border: none;
+    background: #FAFAFF;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    font-size: 18px;
+}
+
+#messageInput {
+    height: 200px;
+    text-align: top;
+    vertical-align: top;
+}
+
+button {
+    background: var(--pink);
+    border-radius: 15px;
+    color: var(--ceramic);
+    border: none;
+    text-align: center;
+    font-size: 18px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+button:hover {
+    /* background-color: var(--green); */
+    transition: 0.5s ease-in-out;
+    transform: scale(1.1);
+
+}
+
+.redirectingButton {
+    width: 200px;
+    height: 50px;
+}
+
+.smallButton {
+    width: 100px;
+    height: 50px;
+}
+
+footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    height: 80px;
+    color: var(--green);
+}
+
+@keyframes jump {
+    0% {
+        transform: translate3d(0, 0, 0) scale3d(1, 1, 1);
+    }
+    50% {
+        transform: translate3d(0, 10%, 0) scale3d(.9, 1.1, 1);
+    }
+    100% {
+        transform: translate3d(0, 20%, 0) scale3d(1.1, .9, 1);
+    }
+}
+
+.jump:hover {
+    animation: jump 0.5s linear alternate infinite;
+}
+
+@keyframes pulse {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.2);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
