@@ -105,7 +105,7 @@ body {
 .aboutMe {
     background-color: var(--yellow);
     background: linear-gradient(180deg, #FFFFFF 0%, rgba(255, 255, 255, 0.880208) 11.98%, rgba(255, 255, 255, 0) 100%), rgba(252, 227, 138, 0.5);
-    height: 430px;
+    height: 450px;
     align-self: center;
     justify-content: flex-end;
     text-align: center;
@@ -114,7 +114,7 @@ body {
 .aboutMeContent {
     background-color: white;
     width: 90%;
-    height: 300px;
+    height: 350px;
 
     display: grid;
     grid-template-columns: 1fr 1fr;
