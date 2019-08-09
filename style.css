@@ -40,14 +40,14 @@ body {
 }
 
 .welcome {
-    margin-top: 75px; 
+    margin-top: 75px;
     background-image: url("images/background-botanical.jpg");
     background-repeat: no-repeat;
-    height: 585px;
+    height: calc(100vh - 75px);
     display: flex;
     justify-content: flex-end;
     background-position: center;
-    background-size: 100% auto;
+    background-size: 100vw auto
 }
 
 .welcome_content {
@@ -55,7 +55,8 @@ body {
     width: 50%;
     height: 100%;
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
+    justify-content: center;
     text-align: center;
     align-items: center;
 }
@@ -77,7 +78,7 @@ body {
 
 #text {
     width: 80%;
-    font-size: 36px;
+    font-size: 40px;
 }
 
 .sectionName {
@@ -85,6 +86,7 @@ body {
 }
 
 .contactOrCheckCV {
+    margin-top: 5vh;
     display: flex;
     flex-direction: column;
     align-items: center;
