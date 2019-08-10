@@ -6,6 +6,7 @@
 }
 
 * {
+    /* CODE_REVIEW w porządku, ale font-family jest dziedziczone, więc lepiej wrzucić do body */
     font-family: 'Bai Jamjuree', sans-serif;
 }
 
@@ -47,6 +48,7 @@ body {
     display: flex;
     justify-content: flex-end;
     background-position: center;
+    /* CODE_REVIEW ja tutaj zrobiłbym : auto 100vh. Moim zdaniem efekt trochę lepszy */
     background-size: 100vw auto
 }
 
@@ -104,6 +106,8 @@ body {
 .aboutMe {
     background-color: var(--yellow);
     background: linear-gradient(180deg, #FFFFFF 0%, rgba(255, 255, 255, 0.880208) 11.98%, rgba(255, 255, 255, 0) 100%), rgba(252, 227, 138, 0.5);
+    /* CODE_REVIEW uważłbym z ustawianiem stałej wysokości sekcji, to się aż kusi o wylewanie treści i 
+    niepotrzebne media queries  */
     height: 430px;
 }
 
@@ -182,6 +186,8 @@ body {
 }
 
 .portfolio {
+    /* CODE_REVIEW szerokość relatywna, a wysokość zhardcodowana - też bym unikał bo często
+     zniekształca proporcje */
     width: 100%;
     height: 750px;
     text-align: center;
@@ -225,6 +231,7 @@ body {
 
 .pic1Text {
     position: absolute;
+    /* CODE_REVIEW NIGDY nie używać float do pozycjonowania! Tylko flex/grid/position: relative/absolute */
     float: left;
     text-align: left;
     margin-left: 30px;
@@ -278,7 +285,7 @@ body {
     grid-row-end: 3;
 
 }
-
+/* CODE_REVIEW ?? hover hovera xD? */
 .pic5:hover:hover img {
     opacity: 0.3;
     transition: 0.5s;
@@ -297,6 +304,7 @@ body {
     z-index: 1;
     width: 50%;
     margin-right: 30px;
+    /* CODE_REVIEW nie jestem pewien co dokładnie chciałaś tu osiągnąć, ale raczej używa sie display: none */
     visibility: hidden;
     opacity: 0;
 }
@@ -367,9 +375,10 @@ body {
 }
 
 .contactForm button {
+    /* CODE_REVIEW float, grr 😠 */
     float: right;
 }
-
+/* CODE_REVIEW raczej bym unikał stylowania po tagach, lepiej nadawać klasy */
 input {
     width: 100%;
     margin-bottom: 20px;
@@ -383,7 +392,7 @@ input {
     box-sizing: border-box;
     font-size: 18px;
 }
-
+/* CODE_REVIEW zaleca się stylować po id tylko w ostateczności */
 #messageInput {
     height: 200px;
     text-align: top;
@@ -453,3 +462,11 @@ footer {
         transform: scale(1);
     }
 }
+
+/* CODE_REVIEW */
+/* Większość wygląda w porządku, błędy są drobne. Dobre zastosowanie zmiennych css. */
+/* Ale zrobiłaś duży błąd. Każdy z trzech arkuszy css jaki napisałaś wstawiany jest za pomocą @media. */
+/* Przez to, wspólne dla trzech różnych szerokości style musiałaś kopiować. To jest brutalne pogwłacenie */
+/* zasady DRY xD. To co powinnaś zrobić to jeden z tych arkuszy wrzucić bez @media, a w pozostałych  */
+/* arkuszach wpisać różnice (tzn. to co powinno się zmienić na ekranach o innej szerokości). */
+/* Od siebie polecam zaczynać od bardzo wąskich urządzeń mobilnych. */

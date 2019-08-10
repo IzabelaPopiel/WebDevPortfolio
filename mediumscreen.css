@@ -1,3 +1,5 @@
+/* CODE_REVIEW zamiast definiować zmienne w każdym pliku oddzielne lepiej jest stworzyć plik tylko na nie i 
+skorzystać z dyrektywy @import */
 :root {
     --yellow: #FCE38A;
     --pink: #F38181;
