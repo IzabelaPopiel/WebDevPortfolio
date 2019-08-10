@@ -4,6 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- CODE_REVIEW WTF? Czemu tak xD? Myślę, że lepiej zrobić media wewnątrz tych plików -->
     <link rel="stylesheet" media="screen and (min-width: 320px)" href="smallscreen.css">
     <link rel="stylesheet" media="screen and (min-width: 720px)" href="mediumscreen.css">
     <link rel="stylesheet" media="screen and (min-width: 1024px)" href="style.css">
@@ -14,7 +15,9 @@
 <body>
     <main>
         <div class='container'>
+            <!-- CODE_RIEVIEW myślę, że lepiej byłoby header wyrzucić poza main i umieścić w tagu header -->
             <section class="navBar">
+                <!-- CODE_REVIEW - taką listę lepiej umieszczać wewnątrz ul a linki wewnątrz li-->
                 <a href="#aboutMe" class="headerItem">About me</a>
                 <a href="#skills" class="headerItem">Skills</a>
                 <a href="#portfolio" class="headerItem">Portfolio</a>
@@ -23,7 +26,7 @@
             </section>
 
             <section class="welcome">
-
+                <!-- CODE_RIEVIEW mieszasz różne konwencje nazywania klas - lepiej trzymać się jednej -->
                 <div class="welcome_content">
 
                     <div id="text">
@@ -31,6 +34,7 @@
                         <p>My name is Plant <br />
                             and I am web designer</p>
                         <div class="socials">
+                            <!-- CODE_RIEVIEW tutaj jak wyżej z listą -->
                             <img id="icon" src="icons/twitter.png" />
                             <img id="icon" src="icons/linkedin.png" />
                             <img id="icon" src="icons/github.png" />
@@ -43,7 +47,7 @@
                 </div>
 
             </section>
-
+            
             <section class="contactOrCheckCV">
                 <p>
                     I am happy to help you with any problem!
@@ -204,9 +208,26 @@
     </main>
 
     <footer>
+        <!-- CODE_RIEVIEW Love this xD -->
         Created by CactusCrew 2k19
 
     </footer>
 </body>
+<!-- CODE_REVIEW -->
+<!-- Niektóre przyciski i ikony nie mają kursora wskaźnika. -->
+<!-- W małych szerokościach (około 320px) strona się rozpada. Nawet Iphone X (375px) w pione cierpi -->
+<!-- Kilka animacji nachodzi na inne zdjęcia - możliwe, że ci trochę namieszałem przy tłumaczeniu, więc -->
+<!-- nie odejmę ci za to punktów, ale radzę to poprawić. -->
+<!-- Ikon docelowo powinny być linkami - do twoich (w twoim przypadku roślinki) mediów społecznościowych. -->
+<!-- Co do nazywania klas polecam poczytać o metodologii BEM - moim zdaniem jest świetna. -->
+<!-- Nieładny outline po naciśnięciu na pola formularza. -->
+
+<!-- Ocena końcowa:
+    Code quality: 9/10
+    Design quality: 9.5/10
+    Business quality: 10/10
+    Features quality: 9/10
+    RAZEM: 37.5/40
+ -->
 
 </html>
